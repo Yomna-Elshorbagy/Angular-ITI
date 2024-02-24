@@ -1,0 +1,135 @@
+<!-- <p>insertproduct works!</p>
+
+<button class="btn btn-success">
+    Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+  </button>
+  //(click)="addproduct()"  -->
+
+
+
+  <h2>Add Product</h2>
+<div class="container">
+    <div class="card border-primary mb-4">
+      <div class="card-header  bg-primary text-white">Product Form </div>
+      <div class="card-body">
+        <form  #AddproForm="ngForm" (ngSubmit)="addproduct()">
+          <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label" for="emailId">Name of Product</label>
+            <div class="col-md-8">
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                placeholder="Name (required)"
+                required
+                Name
+                pattern="[A-Za-z]{5,}"
+                minlength="4"
+                name="name"
+                [(ngModel)]="product2.name"
+                #ProductName="ngModel"
+                [ngClass]="{'is-invalid':(ProductName.touched||ProductName.dirty) &&!ProductName.valid }"
+              />
+  
+              <span class="invalid-feedback"> </span>
+              @if(ProductName.errors?.['required']){
+                <span>ProductName is required</span>
+              }
+              @if(ProductName.errors?.['pattern']){
+                <span>ProductName at least 5 chars</span>
+              }
+              @if(ProductName.errors?.['minlength']){
+                <span>First Name at least 3 chars</span>
+              }
+            </div>
+          </div>
+          <div class="form-group row mb-2">
+            <label for="Password" class="col-md-2 col-form-label">Price</label>
+            <div class="col-md-8">
+              <input
+                class="form-control"
+                id="price"
+                type="number"
+                placeholder="Price (required)"
+                required
+                Name
+                name="price"
+                [(ngModel)]="product2.price"
+                #ProductPrice="ngModel"
+                [ngClass]="{'is-invalid':(ProductPrice.touched||ProductPrice.dirty) &&!ProductPrice.valid }"
+
+              />
+              <span class="invalid-feedback"> </span>
+              @if(ProductPrice.errors?.['required']){
+                <span>ProductPrice is required</span>
+              }
+
+            </div>
+          </div>
+
+          <div class="form-group row mb-2">
+            <label for="category" class="col-md-2 col-form-label">Category</label>
+            <div class="col-md-8">
+              <select class="form-select" id="category" name="category" 
+              [(ngModel)]="product2.category"
+              #ProductCategory="ngModel"
+              >
+                <option value="" selected> All product...</option>
+                <option value="Smart Phone"> Smart Phone </option>
+                <option value="Laptop"> Laptop</option>
+                <option value="Skin Care"> Skin Care </option>
+              </select>
+            </div>
+          </div>
+  
+          <!-- <button type="submit" class="btn btn-primary" (click)="addproduct()" >Add product</button> -->
+          <button type="submit" class="btn btn-primary" (click)="insertprod()" >Add product</button>
+
+        </form>
+      </div>
+    </div>
+     <!-- <p>ProductName valid :{{ProductName.valid}} </p> 
+     <p>ProductName dirty :{{ProductName.dirty}} </p>
+     <p>ProductName  touched :{{ProductName.touched}} </p> 
+    <p>ProductName  errors :{{ProductName.errors | json}} </p> -->
+
+    <p>AddproForm valid :{{AddproForm.valid}} </p> 
+
+
+  </div>
+
+  <br><br>
+  <h1>Product Items</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Product id</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product category</th>       
+            <th scope="col">EDIT</th>       
+            <th scope="col">Delete</th>       
+        </tr>
+    </thead>
+    <tbody>
+        @for(item of insertproduct ;track item.id){
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price }}</td>
+            <td>{{ item.category }}</td>
+            <td><button class="btn btn-primary" >Edit Product</button></td>
+            <td><button class="btn btn-danger" (click)="deleteprod(item.id)">Delete Product</button></td>
+        </tr>
+    }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2"><strong>Total products:</strong></td>
+            <!-- <td><strong>{{ allproducts()}}</strong></td> -->
+        </tr>
+    </tfoot>
+
+</table>
+
+

@@ -1,0 +1,248 @@
+{
+  "products": [
+    {
+      "id": "10",
+      "name": "SanDisk SSD PLUS 1TB Internal Monitor SSD - SATA III 6 Gb/s",
+      "price": 109,
+      "category": "electronics",
+      "categoryId": 3,
+      "quantity": 1,
+      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Boost SATA III 2.5",
+      "price": 109,
+      "category": "electronics",
+      "categoryId": 3,
+      "quantity": 0,
+      "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "price": 599,
+      "category": "electronics",
+      "categoryId": 3,
+      "quantity": 3,
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+    }
+  ],
+  "insertproduct": [
+    {
+      "id": "13",
+      "name": "Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin",
+      "price": 599,
+      "category": "electronics"
+    },
+    {
+      "id": "ad5d",
+      "name": "falk palm",
+      "price": 120,
+      "category": "Smart Phone"
+    },
+    {
+      "id": "3eae",
+      "name": "prod1",
+      "price": "70",
+      "category": "Laptop"
+    },
+    {
+      "id": "4201",
+      "name": "aa smart iphone",
+      "price": "55",
+      "category": "Smart Phone"
+    },
+    {
+      "id": "6555",
+      "name": "hhmmn",
+      "price": "55",
+      "category": "Laptop"
+    },
+    {
+      "id": "33b0",
+      "name": "yomna",
+      "price": 55,
+      "category": "Laptop"
+    },
+    {
+      "id": "0894",
+      "price": 55,
+      "name": "ters gard",
+      "category": "Skin Care"
+    },
+    {
+      "id": "8e7a",
+      "name": "prodk",
+      "price": 555,
+      "category": "Skin Care"
+    },
+    {
+      "id": "8821",
+      "name": "prodf",
+      "price": 1223,
+      "category": "Smart Phone"
+    },
+    {
+      "id": "2d8d",
+      "name": "omarh",
+      "price": 10,
+      "category": "Laptop"
+    },
+    {
+      "id": "94fc",
+      "category": "Laptop",
+      "name": "prodl",
+      "price": 10
+    },
+    {
+      "id": "b1b0",
+      "name": "yomna",
+      "price": 555,
+      "category": "Laptop"
+    },
+    {
+      "id": "e077",
+      "name": "YomnaElshory",
+      "price": 55,
+      "category": "Skin Care"
+    },
+    {
+      "id": "18f8",
+      "name": "mobile",
+      "price": 1200,
+      "category": "Smart Phone"
+    },
+    {
+      "id": "ddcb",
+      "name": "product",
+      "price": 55,
+      "category": "Skin Care"
+    },
+    {
+      "id": "87f6",
+      "name": "hhhhh",
+      "price": 55,
+      "category": "Laptop"
+    },
+    {
+      "id": "f23b",
+      "name": "jjjjj",
+      "price": 55,
+      "category": "Laptop"
+    },
+    {
+      "id": "fb8b",
+      "name": "yomna",
+      "price": 55,
+      "category": "Smart Phone"
+    }
+  ],
+  "users": [
+    {
+      "fullName": "",
+      "mobile": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "id": "76a1"
+    },
+    {
+      "id": "d928",
+      "fullName": "yomna",
+      "password": "ffffff",
+      "email": "laila@gmail.com",
+      "mobile": [
+        {
+          "countrycode": "Egypt",
+          "phoneNumber": "10202366"
+        }
+      ],
+      "address": []
+    },
+    {
+      "id": "07a6",
+      "fullName": "",
+      "password": "",
+      "email": "",
+      "mobile": [
+        {
+          "countrycode": "",
+          "phoneNumber": ""
+        }
+      ],
+      "address": []
+    },
+    {
+      "id": "4e19",
+      "fullName": "yomna",
+      "password": "gggggg",
+      "email": "laila@gmail.com",
+      "mobile": [
+        {
+          "countrycode": "Egypt",
+          "phoneNumber": "10202366"
+        }
+      ],
+      "address": []
+    },
+    {
+      "id": "7520",
+      "fullName": "yomna",
+      "password": "gggggg",
+      "email": "laila@gmail.com",
+      "mobile": [
+        {
+          "countrycode": "Egypt",
+          "phoneNumber": "10202366"
+        }
+      ],
+      "address": []
+    },
+    {
+      "id": "ae4f",
+      "fullName": "yomna",
+      "password": "gggggg",
+      "email": "laila@gmail.com",
+      "mobile": [
+        {
+          "countrycode": "Egypt",
+          "phoneNumber": "10202366"
+        }
+      ],
+      "address": []
+    },
+    {
+      "id": "8879",
+      "fullName": "nnn",
+      "password": "",
+      "email": "",
+      "mobile": [
+        {
+          "countrycode": "",
+          "phoneNumber": ""
+        }
+      ],
+      "address": [
+        {
+          "city": "",
+          "street": "",
+          "postalcode": ""
+        }
+      ]
+    },
+    {
+      "id": "a038",
+      "fullName": "lailamohamed",
+      "password": "1111111",
+      "email": "laila@gmail.com",
+      "mobile": [
+        {
+          "countrycode": "Egypt",
+          "phoneNumber": "10202366"
+        }
+      ],
+      "address": []
+    }
+  ]
+}
