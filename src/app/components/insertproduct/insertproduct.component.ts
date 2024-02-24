@@ -30,7 +30,7 @@ export class InsertproductComponent implements OnInit{
   } as Insertproduct
 
   insertproduct!:Insertproduct[];
-
+  updateDone: boolean = false;
   constructor( private router:Router, private iprod:InsertproductsService, private route:ActivatedRoute){
     this.insertproduct=[
     {
@@ -58,12 +58,7 @@ export class InsertproductComponent implements OnInit{
  
     ]
   }
-    //  ngOnInit(): void {
-    //   this.prodeServi.getAllProductbyMyIP().subscribe({
-    //     next:(data)=>{console.log(data)}
-        
-    //   })
-    //  }
+ 
 
     addproduct(){
       this.iprod.createnewproduct(this.product2).subscribe({
@@ -100,38 +95,27 @@ export class InsertproductComponent implements OnInit{
         }
     })
 
-    // let prodid=Number( this.route.snapshot.paramMap.get('id'))
-    // this.insertproduct= this.iprod.getProById(prodid)!
-
-  //   this.route.paramMap.subscribe((params)=>{
-  //     let id= Number(params.get('id'))
-  //     this.getProById(id)
-  //   })
-  // }
-  //   getProById(id:number){
-  //   this.iprod.edit(id).subscribe((data)=>{
-  //    this.product2=data
-  //    console.log(data)
-  //   })
    
     }
+    updateProductBtn(id: string) {
+      let updatedProduct = this.insertproduct.filter((itemId) => itemId.id === id);
+      this.updateDone = true;
+      this.product2.id = updatedProduct[0].id;
+      this.product2.name = updatedProduct[0].name;
+      this.product2.price = updatedProduct[0].price;
+      this.product2.category = updatedProduct[0].category;
+      console.log(updatedProduct);
+    }
+    
+    updateProduct() {
+      console.log(this.product2);
+    
+      this.iprod.updateProduct(this.product2)?.subscribe({
+        next: () => {
+          this.updateDone = false;
+        },
+      });
 
-
-  
-    // deleteitem(id:number){
-    //   this.iprod.delete(id).subscribe((data)=>{
-    //     this.insertproduct= this.insertproduct.filter(_ => _.id != id)
-    //   })
-
-    // }
-
-
-      // deleteProduct(id:Number){
-      //   this.iprod.deleteProduct(this.product2).subscribe({
-      //     next:(data)=>{
-      //       console.log(data)
-      //     }
-      //   })
-      // }
-       
+    } 
+ 
 }

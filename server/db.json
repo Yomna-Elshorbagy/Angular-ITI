@@ -38,7 +38,7 @@
     {
       "id": "ad5d",
       "name": "falk palm",
-      "price": 120,
+      "price": 125,
       "category": "Smart Phone"
     },
     {
@@ -135,6 +135,18 @@
       "id": "fb8b",
       "name": "yomna",
       "price": 55,
+      "category": "Smart Phone"
+    },
+    {
+      "id": "4201",
+      "name": "aa smart iphone",
+      "price": 66,
+      "category": "Smart Phone"
+    },
+    {
+      "id": "ad5d",
+      "name": "falk palm",
+      "price": 125,
       "category": "Smart Phone"
     }
   ],

@@ -10,9 +10,9 @@
   <h2>Add Product</h2>
 <div class="container">
     <div class="card border-primary mb-4">
-      <div class="card-header  bg-primary text-white">Product Form </div>
+      <div class="card-header  bg-primary text-white"> {{ updateDone ? "Update Product" : "Add Product" }} </div>
       <div class="card-body">
-        <form  #AddproForm="ngForm" (ngSubmit)="addproduct()">
+        <form  #AddproForm="ngForm"  (ngSubmit)="updateDone ? updateProduct() : addproduct()">
           <div class="form-group row mb-2">
             <label class="col-md-2 col-form-label" for="emailId">Name of Product</label>
             <div class="col-md-8">
@@ -83,7 +83,7 @@
           </div>
   
           <!-- <button type="submit" class="btn btn-primary" (click)="addproduct()" >Add product</button> -->
-          <button type="submit" class="btn btn-primary" (click)="insertprod()" >Add product</button>
+          <button type="submit" class="btn btn-primary" (click)="insertprod()" > {{ updateDone ? "Update Product" : "Add Product" }}</button>
 
         </form>
       </div>
@@ -118,7 +118,8 @@
                 <td>{{ item.name }}</td>
                 <td>{{ item.price }}</td>
             <td>{{ item.category }}</td>
-            <td><button class="btn btn-primary" >Edit Product</button></td>
+            <!-- <td><button class="btn btn-primary" >Edit Product</button></td> -->
+            <button (click)="updateProductBtn(item.id)" class="btn btn-primary"> Update</button>
             <td><button class="btn btn-danger" (click)="deleteprod(item.id)">Delete Product</button></td>
         </tr>
     }
