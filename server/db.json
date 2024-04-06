@@ -20,21 +20,12 @@
     },
     {
       "id": "13",
-      "name": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-      "price": 599,
-      "category": "electronics",
-      "categoryId": 3,
-      "quantity": 3,
-      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+      "name": "Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin",
+      "price": 600,
+      "category": "electronics"
     }
   ],
   "insertproduct": [
-    {
-      "id": "13",
-      "name": "Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin",
-      "price": 599,
-      "category": "electronics"
-    },
     {
       "id": "ad5d",
       "name": "falk palm",
@@ -44,19 +35,19 @@
     {
       "id": "3eae",
       "name": "prod1",
-      "price": "70",
+      "price": 2000,
       "category": "Laptop"
     },
     {
       "id": "4201",
       "name": "aa smart iphone",
-      "price": "55",
+      "price": 120,
       "category": "Smart Phone"
     },
     {
       "id": "6555",
       "name": "hhmmn",
-      "price": "55",
+      "price": 550,
       "category": "Laptop"
     },
     {
@@ -148,6 +139,102 @@
       "name": "falk palm",
       "price": 125,
       "category": "Smart Phone"
+    },
+    {
+      "id": "4201",
+      "name": "aa smart iphone",
+      "price": 555,
+      "category": "Smart Phone"
+    },
+    {
+      "id": "4201",
+      "name": "aa smart iphone",
+      "price": 90,
+      "category": "jewelery"
+    },
+    {
+      "id": "4201",
+      "name": "aa smart iphone",
+      "price": "55",
+      "category": "men's clothing"
+    },
+    {
+      "id": "ad5d",
+      "name": "falk palm",
+      "price": 1200,
+      "category": "Smart Phone"
+    },
+    {
+      "id": "ad5d",
+      "name": "falk palm",
+      "price": 125,
+      "category": "men's clothing"
+    },
+    {
+      "id": "3eae",
+      "name": "prod1",
+      "price": "70",
+      "category": "men's clothing"
+    },
+    {
+      "id": "ad5d",
+      "name": "falk palm",
+      "price": 125,
+      "category": "women's clothing"
+    },
+    {
+      "id": "4201",
+      "name": "aa smart iphone",
+      "price": "55",
+      "category": "Laptop"
+    },
+    {
+      "id": "4201",
+      "name": "aa smart iphone",
+      "price": 120,
+      "category": "Laptop"
+    },
+    {
+      "id": "d17a",
+      "name": "yomna",
+      "price": 55,
+      "category": "men's clothing"
+    },
+    {
+      "id": "3eae",
+      "name": "prod1",
+      "price": 1000,
+      "category": "Laptop"
+    },
+    {
+      "id": "ad5d",
+      "name": "falk palm",
+      "price": 500,
+      "category": "women's clothing"
+    },
+    {
+      "id": "13",
+      "name": "Acer SB220Q bi 21.5 inches Full HD IPS Ultra-Thin",
+      "price": 600,
+      "category": "electronics"
+    },
+    {
+      "id": "3eae",
+      "name": "prod1",
+      "price": 2000,
+      "category": "Laptop"
+    },
+    {
+      "id": "4201",
+      "name": "aa smart iphone",
+      "price": 120,
+      "category": "Smart Phone"
+    },
+    {
+      "id": "6555",
+      "name": "hhmmn",
+      "price": 550,
+      "category": "Laptop"
     }
   ],
   "users": [

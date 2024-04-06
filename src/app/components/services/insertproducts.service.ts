@@ -21,13 +21,7 @@ export class InsertproductsService {
   deletepro(productid:string):Observable<any>{
     return this.http.delete<any>(`http://localhost:3000/insertproduct/${productid}`)
   }
-  // updateProduct(prod: any): Observable<any> {
-  //   return this.http.put<any>(`http://localhost:3000/products/${prod.id}`, JSON.stringify(prod), {
-  //     headers: new HttpHeaders({
-  //       'content-type': 'application/json',
-  //     }),
-  //   });
-  // }
+
 
   updateProduct(product:any): Observable<any> | undefined {
     return this.http.put<any>(
